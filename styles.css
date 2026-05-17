@@ -106,7 +106,7 @@ a {
 
 .hero-image {
   aspect-ratio: 16 / 9;
-  background: url("assets/Website Hintergrund(1).png");
+  background: url("assets/website-hintergrund-clean-small.jpg");
   background-size: cover;
   background-position: center top;
   border-bottom: 1px solid var(--line);
