@@ -6,10 +6,10 @@ Statische Website fuer den Internationalen FCI-Stoeber Wettbewerb 2027.
 
 Die Website erwartet diese Dateien:
 
-- `assets/header-dog.jpg` fuer den Original-Hund-Header aus Canva
-- `assets/venue-stadium.jpg` fuer das Original-Stadionbild aus Canva
+- `assets/Website Hintergrund(1).png` fuer den Original-Hund-Header aus Canva
+- `assets/stadion.jpg` fuer das Original-Stadionbild / den Veranstaltungsort
 
-Bis diese Bilder exportiert sind, zeigt die Seite farbige Platzhalter.
+Bis diese Bilder hochgeladen sind, zeigt die Seite farbige Platzhalter.
 
 ## GitHub Pages
 
