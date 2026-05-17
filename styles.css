@@ -104,13 +104,10 @@ a {
 }
 
 .hero-image {
-  height: 250px;
-  background:
-    radial-gradient(circle at 50% 15%, rgba(216, 183, 101, 0.22), transparent 22%),
-    linear-gradient(120deg, rgba(55, 34, 15, 0.75), rgba(11, 40, 26, 0.4)),
-    url("assets/Website Hintergrund(1).png");
+  aspect-ratio: 16 / 9;
+  background: url("assets/Website Hintergrund(1).png");
   background-size: cover;
-  background-position: center;
+  background-position: center top;
   border-bottom: 1px solid var(--line);
 }
 
