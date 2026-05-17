@@ -85,6 +85,7 @@ a {
   max-width: 1180px;
   margin: 0 auto;
   padding: 88px 28px;
+  scroll-margin-top: 92px;
 }
 
 .hero {
@@ -238,15 +239,34 @@ button,
   margin-bottom: 34px;
 }
 
+.venue {
+  padding-top: 104px;
+}
+
 .venue-photo {
-  height: 330px;
-  border: 1px solid var(--line);
+  aspect-ratio: 16 / 7;
+  min-height: 360px;
+  border: 1px solid rgba(234, 219, 165, 0.62);
   background:
-    linear-gradient(180deg, rgba(7, 27, 18, 0.08), rgba(7, 27, 18, 0.5)),
+    linear-gradient(180deg, rgba(7, 27, 18, 0.04), rgba(7, 27, 18, 0.18)),
     url("assets/stadion.jpg");
   background-size: cover;
   background-position: center;
-  margin-bottom: 24px;
+  box-shadow: 0 28px 80px rgba(0, 0, 0, 0.28);
+  margin-bottom: 28px;
+}
+
+.venue .card {
+  min-height: 168px;
+  background:
+    linear-gradient(180deg, rgba(29, 74, 48, 0.28), rgba(7, 27, 18, 0.18)),
+    rgba(10, 39, 25, 0.74);
+}
+
+.venue .card h3 {
+  border-bottom: 1px solid rgba(216, 183, 101, 0.34);
+  padding-bottom: 14px;
+  margin-bottom: 16px;
 }
 
 .card {
@@ -352,5 +372,10 @@ textarea {
 
   .ornament-frame {
     min-height: auto;
+  }
+
+  .venue-photo {
+    min-height: 240px;
+    aspect-ratio: 4 / 3;
   }
 }
