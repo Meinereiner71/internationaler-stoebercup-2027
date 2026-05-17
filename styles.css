@@ -252,14 +252,14 @@ button,
 }
 
 .venue-photo {
-  aspect-ratio: 16 / 4.2;
-  min-height: 250px;
+  aspect-ratio: 16 / 3.4;
+  min-height: 220px;
   border: 1px solid rgba(234, 219, 165, 0.62);
   background:
     linear-gradient(180deg, rgba(7, 27, 18, 0.02), rgba(7, 27, 18, 0.12)),
     url("assets/stadion.jpg");
   background-size: cover;
-  background-position: center 76%;
+  background-position: center 88%, center 88%;
   box-shadow: 0 28px 80px rgba(0, 0, 0, 0.28);
   margin-bottom: 28px;
 }
