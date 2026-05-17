@@ -257,9 +257,9 @@ button,
   border: 1px solid rgba(234, 219, 165, 0.62);
   background:
     linear-gradient(180deg, rgba(7, 27, 18, 0.02), rgba(7, 27, 18, 0.12)),
-    url("assets/stadion.jpg");
-  background-size: cover, 235%;
-  background-position: center, 27% 58%;
+    url("assets/stadion-detail.jpg");
+  background-size: cover;
+  background-position: center;
   box-shadow: 0 28px 80px rgba(0, 0, 0, 0.28);
   margin-bottom: 28px;
 }
