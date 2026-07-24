@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="de" data-page="registration">
+  <head>
+    <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#071b12">
+    <meta name="description" content="Informationen und vorbereitetes Anmeldeformular für den Internationalen FCI-Stöbercup 2027.">
+    <title data-title-de="Anmeldung | Internationaler FCI-Stöbercup 2027" data-title-en="Registration | International FCI Stöbercup 2027">Anmeldung | Internationaler FCI-Stöbercup 2027</title>
+    <script>document.documentElement.classList.add("js")</script><link rel="stylesheet" href="styles.css"><script src="app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main" data-de="Zum Inhalt springen" data-en="Skip to content">Zum Inhalt springen</a><div id="site-header"></div>
+    <main id="main">
+      <header class="page-hero"><div class="container"><nav class="breadcrumbs" aria-label="Brotkrümelnavigation" data-aria-label-de="Brotkrümelnavigation" data-aria-label-en="Breadcrumb"><a href="index.html" data-de="Start" data-en="Home">Start</a><span>/</span><span data-de="Anmeldung" data-en="Registration">Anmeldung</span></nav><p class="eyebrow" data-de="Teilnahme" data-en="Participation">Teilnahme</p><h1 data-de="Anmeldung" data-en="Registration">Anmeldung</h1><p class="hero-lead" data-de="Der Anmeldeprozess ist vorbereitet und wird nach Freigabe der Teilnahmebedingungen aktiviert." data-en="The registration process is prepared and will be activated once eligibility conditions have been approved.">Der Anmeldeprozess ist vorbereitet und wird nach Freigabe der Teilnahmebedingungen aktiviert.</p></div></header>
+      <section class="section">
+        <div class="container">
+          <div class="notice reveal"><strong data-de="Anmeldung noch nicht geöffnet:" data-en="Registration is not yet open:">Anmeldung noch nicht geöffnet:</strong> <span data-de="Frist, Pflichtfelder, Klassen, Qualifikationsnachweise und technische Übermittlung werden erst nach offizieller Freigabe verbindlich." data-en="Deadline, required fields, classes, qualification evidence and technical submission will only become binding after official approval.">Frist, Pflichtfelder, Klassen, Qualifikationsnachweise und technische Übermittlung werden erst nach offizieller Freigabe verbindlich.</span></div>
+          <div class="section-heading section-heading--center reveal space-top"><p class="eyebrow" data-de="Geplanter Ablauf" data-en="Planned process">Geplanter Ablauf</p><h2 data-de="In drei Schritten" data-en="In three steps">In drei Schritten</h2></div>
+          <div class="grid grid--3">
+            <article class="card reveal"><span class="card-icon" aria-hidden="true">01</span><h3 data-de="Informationen prüfen" data-en="Review information">Informationen prüfen</h3><p data-de="Ausschreibung, Reglement und Teilnahmevoraussetzungen vollständig lesen." data-en="Read the invitation, regulations and eligibility requirements in full.">Ausschreibung, Reglement und Teilnahmevoraussetzungen vollständig lesen.</p></article>
+            <article class="card reveal"><span class="card-icon" aria-hidden="true">02</span><h3 data-de="Formular ausfüllen" data-en="Complete the form">Formular ausfüllen</h3><p data-de="Persönliche Angaben und Hundedaten vollständig und korrekt eintragen." data-en="Enter personal details and dog information completely and accurately.">Persönliche Angaben und Hundedaten vollständig und korrekt eintragen.</p></article>
+            <article class="card reveal"><span class="card-icon" aria-hidden="true">03</span><h3 data-de="Bestätigung erhalten" data-en="Receive confirmation">Bestätigung erhalten</h3><p data-de="Eine Anmeldung gilt erst nach der noch festzulegenden offiziellen Bestätigung als angenommen." data-en="Registration is only accepted following the official confirmation process still to be defined.">Eine Anmeldung gilt erst nach der noch festzulegenden offiziellen Bestätigung als angenommen.</p></article>
+          </div>
+        </div>
+      </section>
+      <section class="section section--paper">
+        <div class="container">
+          <div class="section-heading reveal"><p class="eyebrow" data-de="Formularvorschau" data-en="Form preview">Formularvorschau</p><h2 data-de="Teilnehmer- und Hundedaten" data-en="Participant and dog details">Teilnehmer- und Hundedaten</h2><p data-de="Diese Vorschau demonstriert Struktur und Validierung. Sie übermittelt noch keine Daten." data-en="This preview demonstrates structure and validation. It does not submit any data yet.">Diese Vorschau demonstriert Struktur und Validierung. Sie übermittelt noch keine Daten.</p></div>
+          <form class="card form-grid reveal" data-placeholder-form novalidate>
+            <div class="field"><label for="reg-name" data-de="Name *" data-en="Name *">Name *</label><input id="reg-name" name="name" type="text" autocomplete="name" required></div>
+            <div class="field"><label for="reg-email" data-de="E-Mail *" data-en="Email *">E-Mail *</label><input id="reg-email" name="email" type="email" autocomplete="email" required></div>
+            <div class="field"><label for="reg-country" data-de="Land *" data-en="Country *">Land *</label><input id="reg-country" name="country" type="text" autocomplete="country-name" required></div>
+            <div class="field"><label for="reg-club" data-de="Verein" data-en="Club">Verein</label><input id="reg-club" name="club" type="text" autocomplete="organization"></div>
+            <div class="field"><label for="dog-name" data-de="Name des Hundes *" data-en="Dog's name *">Name des Hundes *</label><input id="dog-name" name="dog-name" type="text" required></div>
+            <div class="field"><label for="dog-class" data-de="Klasse" data-en="Class">Klasse</label><select id="dog-class" name="class"><option value="" data-de="Klassen werden ergänzt" data-en="Classes to be added">Klassen werden ergänzt</option></select></div>
+            <div class="field field--full"><label for="reg-note" data-de="Hinweis an die Organisation" data-en="Note to the organisers">Hinweis an die Organisation</label><textarea id="reg-note" name="note"></textarea></div>
+            <label class="checkbox field--full"><input type="checkbox" required><span data-de="Ich habe die noch zu veröffentlichenden Teilnahmebedingungen zur Kenntnis genommen. *" data-en="I acknowledge the participation conditions that are yet to be published. *">Ich habe die noch zu veröffentlichenden Teilnahmebedingungen zur Kenntnis genommen. *</span></label>
+            <label class="checkbox field--full"><input type="checkbox" required><span data-de="Ich stimme der Verarbeitung meiner Angaben gemäß Datenschutzerklärung zu. *" data-en="I consent to my details being processed in accordance with the privacy policy. *">Ich stimme der Verarbeitung meiner Angaben gemäß Datenschutzerklärung zu. *</span></label>
+            <div class="field--full"><button class="button" type="submit" data-de="Angaben prüfen" data-en="Check details">Angaben prüfen</button></div>
+            <p class="form-status field--full" tabindex="-1" role="status"></p>
+          </form>
+        </div>
+      </section>
+      <section class="section section--compact"><div class="container notice reveal"><strong data-de="Dokumenten-Upload:" data-en="Document upload:">Dokumenten-Upload:</strong> <span data-de="Wird nur eingebaut, wenn Umfang, Datenschutz und Speicherlösung freigegeben sind." data-en="Will only be added once scope, privacy requirements and storage solution have been approved.">Wird nur eingebaut, wenn Umfang, Datenschutz und Speicherlösung freigegeben sind.</span></div></section>
+    </main><div id="site-footer"></div>
+  </body>
+</html>
