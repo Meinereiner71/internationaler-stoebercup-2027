@@ -1,5 +1,18 @@
 # Änderungsprotokoll
 
+## 2026-07-24 – Sites-Veröffentlichung
+
+- OpenAI-Sites-Projekt angelegt und dessen Projektkennung in
+  `.openai/hosting.json` synchronisiert.
+- Abhängigkeitsfreien Build für ein Cloudflare-Workers-kompatibles Sites-Paket
+  ergänzt.
+- Statische Hauptseiten, lokale Assets, saubere Kurz-URLs, eigene 404-Antwort
+  und Sicherheits-/Cache-Header in den Sites-Worker eingebunden.
+- Automatisierte Worker-Tests für Startseite, Hauptseiten, 404 und Assets
+  ergänzt.
+- Formularübermittlung entsprechend der Nutzerentscheidung weiterhin bewusst
+  zurückgestellt; die lokale Validierung bleibt erhalten.
+
 ## 2026-07-24 – Premium Event Redesign
 
 ### Designsystem und Komponenten

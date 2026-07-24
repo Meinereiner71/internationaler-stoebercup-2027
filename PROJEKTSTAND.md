@@ -4,6 +4,13 @@ Stand: 24. Juli 2026
 Arbeitsbranch: `feature/premium-event-redesign`  
 Zielbranch des Pull Requests: `main`
 
+## Veröffentlichung
+
+- OpenAI Sites: Projekt angelegt, produktive URL wird nach dem erfolgreichen
+  Deployment hier ergänzt.
+- GitHub Pull Request: `feature/premium-event-redesign` nach `main`
+- `main` bleibt bis zur Freigabe unverändert.
+
 ## Umgesetzt
 
 - komplette statische Mehrseiten-Website nach `WEBSITE-PLAN.md`
@@ -15,6 +22,8 @@ Zielbranch des Pull Requests: `main`
 - lokale, optimierte Eventbilder ohne Canva-Hotlinks
 - barrierearme Fokusführung, Skip-Link, Touch-Ziele und Reduced-Motion-Unterstützung
 - SEO-Basis mit eindeutigen Seitentiteln, Beschreibungen, Open Graph, Sitemap und Robots-Datei
+- Sites-Build mit Cloudflare-Worker, statischen Assets, Kurz-URLs,
+  Sicherheits-Headern und eigener 404-Antwort
 
 ## Bewusste Platzhalter
 
@@ -57,5 +66,6 @@ Die Formulare sind im Frontend vollständig gestaltet und validieren Pflichtfeld
 - Kontakt- und Anmeldeformular mit Pflichtfeldern und Statusmeldung geprüft
 - Browserkonsole: keine Fehler oder Warnungen
 - Lighthouse Mobile: Performance 91, Barrierefreiheit 100, Best Practices 100, SEO 100
+- `npm test`: Sites-Build sowie Worker-Routen, 404 und Asset-Auslieferung
 
 Browser-Screenshots und Lighthouse-Rohdaten liegen während der Prüfung lokal unter `output/playwright/` und werden nicht versioniert.
