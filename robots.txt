@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://meinereiner71.github.io/internationaler-stoebercup-2027/sitemap.xml

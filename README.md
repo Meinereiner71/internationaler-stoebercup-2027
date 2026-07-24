@@ -1,16 +1,41 @@
-# Internationaler Stoebercup 2027
+# Internationaler FCI-Stöbercup 2027
 
-Statische Website fuer den Internationalen FCI-Stoeber Wettbewerb 2027.
+Responsive, zweisprachige Event-Website für den Internationalen FCI-Stöbercup 2027 in Villach-Landskron.
 
-## Bilder einsetzen
+## Seiten
 
-Die Website erwartet diese Dateien:
+- Start (`index.html`)
+- Event (`event.html`)
+- Programm (`programm.html`)
+- Unterkunft (`unterkunft.html`)
+- Downloads (`downloads.html`)
+- Kontakt (`kontakt.html`)
+- Anmeldung (`anmeldung.html`)
+- FAQ (`faq.html`)
+- Sponsoren (`sponsoren.html`)
+- Impressum und Datenschutz
 
-- `assets/Website Hintergrund(1).png` fuer den Original-Hund-Header aus Canva
-- `assets/stadion.jpg` fuer das Original-Stadionbild / den Veranstaltungsort
+## Technik
 
-Bis diese Bilder hochgeladen sind, zeigt die Seite farbige Platzhalter.
+Die Website ist ohne Build-Prozess direkt mit GitHub Pages kompatibel:
 
-## GitHub Pages
+- semantisches HTML5
+- Mobile-First-CSS in `styles.css`
+- gemeinsamer Header, Navigation und Footer aus `app.js`
+- DE/EN-Sprachumschaltung ohne externen Übersetzungsdienst
+- keine externen Webfonts, Tracker, Canva-Hotlinks oder JavaScript-Bibliotheken
+- lokal optimierte Hero-Varianten für kleine und große Bildschirme
 
-Nach dem Hochladen ins Repository kann die Seite ueber GitHub Pages aus dem `main` Branch veroeffentlicht werden.
+Lokale Vorschau:
+
+```powershell
+python -m http.server 4173
+```
+
+Danach `http://127.0.0.1:4173/` öffnen.
+
+## Inhaltsstatus
+
+Noch nicht bestätigte Angaben werden sichtbar als Platzhalter ausgegeben. Kontakt- und Anmeldeformular validieren Eingaben lokal, übertragen jedoch keine Daten, solange kein externer datenschutzkonformer Formulardienst freigegeben wurde.
+
+Details, offene Punkte und Arbeitsstand stehen in `PROJEKTSTAND.md`.
