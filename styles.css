@@ -1095,7 +1095,8 @@ details p {
   gap: 0.45rem;
 }
 
-.footer-links a {
+.footer-links a,
+.footer-links span {
   color: var(--text-muted);
   text-decoration: none;
 }

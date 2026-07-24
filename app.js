@@ -77,6 +77,7 @@
               <a href="kontakt.html" data-de="Kontakt" data-en="Contact">Kontakt</a>
               <a href="faq.html">FAQ</a>
               <a href="sponsoren.html" data-de="Sponsoren" data-en="Sponsors">Sponsoren</a>
+              <span data-de="Social Media: Kanäle folgen" data-en="Social media: Channels to follow">Social Media: Kanäle folgen</span>
               <a href="impressum.html" data-de="Impressum" data-en="Legal notice">Impressum</a>
               <a href="datenschutz.html" data-de="Datenschutz" data-en="Privacy">Datenschutz</a>
             </div>
@@ -110,9 +111,14 @@
     document.querySelectorAll("[data-title-de][data-title-en]").forEach((element) => {
       document.title = element.dataset[`title${language === "de" ? "De" : "En"}`];
     });
+    document.querySelectorAll("[data-description-de][data-description-en]").forEach((element) => {
+      element.setAttribute("content", element.dataset[`description${language === "de" ? "De" : "En"}`]);
+    });
     document.querySelectorAll("[data-language]").forEach((button) => {
       button.setAttribute("aria-pressed", String(button.dataset.language === language));
     });
+    updateToggleLabel();
+    setOpenGraphMeta();
     document.dispatchEvent(new CustomEvent("languagechange", { detail: { language } }));
   };
 
@@ -122,20 +128,45 @@
 
   const navToggle = document.querySelector(".nav-toggle");
   const navigation = document.querySelector(".site-nav");
-  const closeNavigation = () => {
+  const updateToggleLabel = () => {
+    if (!navToggle) return;
+    const open = navToggle.getAttribute("aria-expanded") === "true";
+    navToggle.setAttribute("aria-label", language === "de"
+      ? (open ? "Menü schließen" : "Menü öffnen")
+      : (open ? "Close menu" : "Open menu"));
+  };
+  const setOpenGraphMeta = () => {
+    const upsert = (property, content) => {
+      let meta = document.head.querySelector(`meta[property="${property}"]`);
+      if (!meta) {
+        meta = document.createElement("meta");
+        meta.setAttribute("property", property);
+        document.head.append(meta);
+      }
+      meta.setAttribute("content", content);
+    };
+    upsert("og:type", "website");
+    upsert("og:title", document.title);
+    upsert("og:description", document.querySelector('meta[name="description"]')?.content || "");
+    upsert("og:image", new URL("assets/hero-dog-1376.jpg", location.href).href);
+  };
+  const closeNavigation = (returnFocus = false) => {
     if (!navToggle || !navigation) return;
     navToggle.setAttribute("aria-expanded", "false");
     navigation.dataset.open = "false";
+    updateToggleLabel();
+    if (returnFocus) navToggle.focus();
   };
 
   navToggle?.addEventListener("click", () => {
     const open = navToggle.getAttribute("aria-expanded") !== "true";
     navToggle.setAttribute("aria-expanded", String(open));
     navigation.dataset.open = String(open);
+    updateToggleLabel();
   });
   navigation?.querySelectorAll("a").forEach((link) => link.addEventListener("click", closeNavigation));
   document.addEventListener("keydown", (event) => {
-    if (event.key === "Escape") closeNavigation();
+    if (event.key === "Escape" && navToggle?.getAttribute("aria-expanded") === "true") closeNavigation(true);
   });
 
   const countdown = document.querySelector("[data-countdown]");
