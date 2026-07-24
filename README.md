@@ -2,6 +2,9 @@
 
 Responsive, zweisprachige Event-Website für den Internationalen FCI-Stöbercup 2027 in Villach-Landskron.
 
+Produktive Vorschau:
+[internationaler-stoebercup-2027.meinereiner71.chatgpt.site](https://internationaler-stoebercup-2027.meinereiner71.chatgpt.site)
+
 ## Seiten
 
 - Start (`index.html`)

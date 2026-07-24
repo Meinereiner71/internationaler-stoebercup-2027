@@ -6,8 +6,9 @@ Zielbranch des Pull Requests: `main`
 
 ## Veröffentlichung
 
-- OpenAI Sites: Projekt angelegt, produktive URL wird nach dem erfolgreichen
-  Deployment hier ergänzt.
+- OpenAI Sites:
+  `https://internationaler-stoebercup-2027.meinereiner71.chatgpt.site`
+- Zugriff: private, nur für den Eigentümer freigegebene Produktionsvorschau
 - GitHub Pull Request: `feature/premium-event-redesign` nach `main`
 - `main` bleibt bis zur Freigabe unverändert.
 

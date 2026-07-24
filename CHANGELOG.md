@@ -4,6 +4,10 @@
 
 - OpenAI-Sites-Projekt angelegt und dessen Projektkennung in
   `.openai/hosting.json` synchronisiert.
+- Private Produktionsvorschau unter
+  `https://internationaler-stoebercup-2027.meinereiner71.chatgpt.site`
+  veröffentlicht und als SEO-Ziel in Sitemap, Robots-Datei und strukturierten
+  Daten hinterlegt.
 - Abhängigkeitsfreien Build für ein Cloudflare-Workers-kompatibles Sites-Paket
   ergänzt.
 - Statische Hauptseiten, lokale Assets, saubere Kurz-URLs, eigene 404-Antwort
