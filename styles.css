@@ -445,6 +445,16 @@ a {
   text-transform: uppercase;
 }
 
+.hero .eyebrow {
+  color: var(--gold-soft);
+  font-size: clamp(1rem, 2vw, 1.3rem);
+  font-weight: 850;
+  line-height: 1.4;
+  letter-spacing: 0.12em;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.72);
+  text-wrap: balance;
+}
+
 h1,
 h2,
 h3 {
