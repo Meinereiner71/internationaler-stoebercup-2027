@@ -23,10 +23,16 @@
     header.innerHTML = `
       <header class="site-header">
         <div class="container header-inner">
-          <a class="brand" href="index.html">
-            <span class="brand-mark" aria-hidden="true">FCI</span>
-            <span class="brand-copy"><span>Internationaler</span><span>Stöbercup 2027</span></span>
-          </a>
+          <div class="header-identities">
+            <a class="brand" href="index.html">
+              <span class="brand-mark" aria-hidden="true">FCI</span>
+              <span class="brand-copy"><span>Internationaler</span><span>Stöbercup 2027</span></span>
+            </a>
+            <div class="association-mark">
+              <img src="assets/oekv-logo.png" width="1280" height="1130"
+                alt="ÖKV – Österreichischer Kynologenverband">
+            </div>
+          </div>
           <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation"
             data-aria-label-de="Menü öffnen" data-aria-label-en="Open menu">
             <span class="nav-toggle-lines" aria-hidden="true"></span>

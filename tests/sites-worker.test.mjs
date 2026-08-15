@@ -92,7 +92,9 @@ test("returns the custom 404 page for missing HTML routes", async () => {
 });
 
 test("serves local assets with an explicit cache policy", async () => {
-  const response = await request("/assets/seal-320.png", "image/png");
-  assert.equal(response.status, 200);
-  assert.match(response.headers.get("cache-control") ?? "", /max-age=604800/);
+  for (const route of ["/assets/seal-320.png", "/assets/oekv-logo.png"]) {
+    const response = await request(route, "image/png");
+    assert.equal(response.status, 200, route);
+    assert.match(response.headers.get("cache-control") ?? "", /max-age=604800/, route);
+  }
 });

@@ -9,6 +9,7 @@ const rootFileExtensions = new Set([".html", ".css", ".js", ".ico", ".xml", ".tx
 const staticAssetFiles = [
   "hero-dog-1376.jpg",
   "hero-dog-720.jpg",
+  "oekv-logo.png",
   "seal-320.png",
   "stadion-detail.jpg",
   "stadion.jpg",
