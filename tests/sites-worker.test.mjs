@@ -55,6 +55,8 @@ test("serves the homepage and adds security headers", async () => {
   assert.match(html, /Internationaler FCI-St/);
   assert.match(html, /data-en="International Article Search Competition 2027"/);
   assert.match(html, /data-de="Villach, Kärnten, Österreich" data-en="Villach, Carinthia, Austria"/);
+  assert.match(html, /Drei Werte verbinden/);
+  assert.doesNotMatch(html, /data-de="Fairness"/);
 });
 
 test("supports clean URLs for every main page", async () => {
