@@ -51,7 +51,9 @@ test("serves the homepage and adds security headers", async () => {
   assert.equal(response.status, 200);
   assert.match(response.headers.get("content-type") ?? "", /^text\/html/);
   assert.equal(response.headers.get("x-content-type-options"), "nosniff");
-  assert.match(await response.text(), /Internationaler FCI-St/);
+  const html = await response.text();
+  assert.match(html, /Internationaler FCI-St/);
+  assert.match(html, /data-en="International Article Search Competition 2027"/);
 });
 
 test("supports clean URLs for every main page", async () => {

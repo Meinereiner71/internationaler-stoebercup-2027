@@ -26,9 +26,9 @@
           <div class="header-identities">
             <a class="brand" href="index.html" aria-label="Internationaler Stöbercup 2027 – Startseite"
               data-aria-label-de="Internationaler Stöbercup 2027 – Startseite"
-              data-aria-label-en="International Stöbercup 2027 – Home">
+              data-aria-label-en="International Article Search Competition 2027 – Home">
               <img class="brand-seal" src="assets/seal-320.png" width="320" height="311" alt="">
-              <span class="brand-copy"><span>Internationaler</span><span>Stöbercup 2027</span></span>
+              <span class="brand-copy"><span data-de="Internationaler" data-en="International Article Search">Internationaler</span><span data-de="Stöbercup 2027" data-en="Competition 2027">Stöbercup 2027</span></span>
             </a>
             <div class="association-mark">
               <img src="assets/oekv-logo.png" width="1280" height="1130"
@@ -78,7 +78,7 @@
           <div class="footer-intro">
             <a class="brand" href="index.html">
               <img class="brand-seal" src="assets/seal-320.png" width="320" height="311" alt="">
-              <span class="brand-copy"><span>Internationaler</span><span>Stöbercup 2027</span></span>
+              <span class="brand-copy"><span data-de="Internationaler" data-en="International Article Search">Internationaler</span><span data-de="Stöbercup 2027" data-en="Competition 2027">Stöbercup 2027</span></span>
             </a>
             <p data-de="22.–23. Mai 2027 · Villach, Kärnten, Österreich"
               data-en="22–23 May 2027 · Villach, Carinthia, Austria">22.–23. Mai 2027 · Villach, Kärnten, Österreich</p>
