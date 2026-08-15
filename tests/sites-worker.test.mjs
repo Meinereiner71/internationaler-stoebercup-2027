@@ -98,3 +98,14 @@ test("serves local assets with an explicit cache policy", async () => {
     assert.match(response.headers.get("cache-control") ?? "", /max-age=604800/, route);
   }
 });
+
+test("exposes the German and English flag controls in the header", async () => {
+  const response = await request("/app.js", "text/javascript");
+  assert.equal(response.status, 200);
+  const source = await response.text();
+  assert.match(source, /data-language="de"[\s\S]*🇩🇪/);
+  assert.match(source, /data-language="en"[\s\S]*🇬🇧/);
+  assert.match(source, /aria-pressed="true"/);
+  assert.match(source, /Deutsch auswählen/);
+  assert.match(source, /Select English/);
+});

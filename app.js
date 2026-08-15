@@ -24,7 +24,9 @@
       <header class="site-header">
         <div class="container header-inner">
           <div class="header-identities">
-            <a class="brand" href="index.html">
+            <a class="brand" href="index.html" aria-label="Internationaler Stöbercup 2027 – Startseite"
+              data-aria-label-de="Internationaler Stöbercup 2027 – Startseite"
+              data-aria-label-en="International Stöbercup 2027 – Home">
               <img class="brand-seal" src="assets/seal-320.png" width="320" height="311" alt="">
               <span class="brand-copy"><span>Internationaler</span><span>Stöbercup 2027</span></span>
             </a>
@@ -33,10 +35,6 @@
                 alt="ÖKV – Österreichischer Kynologenverband">
             </div>
           </div>
-          <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation"
-            data-aria-label-de="Menü öffnen" data-aria-label-en="Open menu">
-            <span class="nav-toggle-lines" aria-hidden="true"></span>
-          </button>
           <nav class="site-nav" id="site-navigation" aria-label="Hauptnavigation" data-open="false"
             data-aria-label-de="Hauptnavigation" data-aria-label-en="Main navigation">
             <ul class="nav-list">
@@ -47,11 +45,28 @@
                 ${page === "registration" ? 'aria-current="page"' : ""}
                 data-de="Anmeldeinfos" data-en="Registration info">Anmeldeinfos</a></li>
             </ul>
-            <div class="language-switcher" aria-label="Sprache" data-aria-label-de="Sprache" data-aria-label-en="Language">
-              <button class="language-button" type="button" data-language="de" aria-pressed="true">DE</button>
-              <button class="language-button" type="button" data-language="en" aria-pressed="false">EN</button>
-            </div>
           </nav>
+          <div class="header-controls">
+            <div class="language-switcher" aria-label="Sprache auswählen"
+              data-aria-label-de="Sprache auswählen" data-aria-label-en="Choose language">
+              <button class="language-button" type="button" data-language="de" lang="de"
+                aria-pressed="true" aria-label="Deutsch auswählen"
+                data-aria-label-de="Deutsch auswählen" data-aria-label-en="Select German"
+                title="Deutsch / German">
+                <span class="language-flag" aria-hidden="true">🇩🇪</span>
+              </button>
+              <button class="language-button" type="button" data-language="en" lang="en"
+                aria-pressed="false" aria-label="Englisch auswählen"
+                data-aria-label-de="Englisch auswählen" data-aria-label-en="Select English"
+                title="English / Englisch">
+                <span class="language-flag" aria-hidden="true">🇬🇧</span>
+              </button>
+            </div>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation"
+              data-aria-label-de="Menü öffnen" data-aria-label-en="Open menu">
+              <span class="nav-toggle-lines" aria-hidden="true"></span>
+            </button>
+          </div>
         </div>
       </header>`;
   }

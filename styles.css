@@ -230,6 +230,13 @@ a {
   height: auto;
 }
 
+.header-controls {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+  gap: 0.5rem;
+}
+
 .nav-toggle {
   display: inline-grid;
   width: 48px;
@@ -341,25 +348,41 @@ a {
 
 .language-switcher {
   display: flex;
-  gap: 0.25rem;
-  padding: 0.5rem 0.75rem 1rem;
+  gap: 0.3rem;
+  padding: 0;
 }
 
 .language-button {
-  min-width: 48px;
+  display: inline-grid;
+  min-width: 44px;
   min-height: 44px;
+  padding: 0;
+  place-items: center;
   border: 1px solid var(--line);
-  background: transparent;
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.035);
   color: var(--text-muted);
   cursor: pointer;
-  font-size: 0.78rem;
-  font-weight: 800;
+  line-height: 1;
+  transition: border-color 160ms ease, background-color 160ms ease, transform 160ms ease;
+}
+
+.language-button:hover {
+  border-color: var(--gold-soft);
+  background: rgba(216, 183, 101, 0.1);
+  transform: translateY(-1px);
 }
 
 .language-button[aria-pressed="true"] {
   border-color: var(--gold);
-  background: rgba(216, 183, 101, 0.12);
+  background: rgba(216, 183, 101, 0.18);
   color: var(--gold-soft);
+  box-shadow: inset 0 0 0 1px rgba(234, 219, 165, 0.18);
+}
+
+.language-flag {
+  font-size: 1.35rem;
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.45));
 }
 
 .hero {
@@ -1273,10 +1296,6 @@ details p {
     border: 1px solid var(--gold);
   }
 
-  .language-switcher {
-    padding: 0 0 0 0.5rem;
-  }
-
   .language-button {
     min-width: 42px;
   }
@@ -1287,8 +1306,16 @@ details p {
 }
 
 @media (max-width: 559px) {
+  .header-inner {
+    gap: 0.6rem;
+  }
+
   .brand-seal {
     width: 42px;
+  }
+
+  .header-identities .brand-copy {
+    display: none;
   }
 
   .header-identities {
