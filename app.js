@@ -25,7 +25,7 @@
         <div class="container header-inner">
           <div class="header-identities">
             <a class="brand" href="index.html">
-              <span class="brand-mark" aria-hidden="true">FCI</span>
+              <img class="brand-seal" src="assets/seal-320.png" width="320" height="311" alt="">
               <span class="brand-copy"><span>Internationaler</span><span>Stöbercup 2027</span></span>
             </a>
             <div class="association-mark">
@@ -62,7 +62,7 @@
         <div class="container footer-top">
           <div class="footer-intro">
             <a class="brand" href="index.html">
-              <span class="brand-mark" aria-hidden="true">FCI</span>
+              <img class="brand-seal" src="assets/seal-320.png" width="320" height="311" alt="">
               <span class="brand-copy"><span>Internationaler</span><span>Stöbercup 2027</span></span>
             </a>
             <p data-de="22.–23. Mai 2027 · Villach, Kärnten, Österreich"

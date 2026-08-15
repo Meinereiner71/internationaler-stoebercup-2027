@@ -197,18 +197,12 @@ a {
   text-decoration: none;
 }
 
-.brand-mark {
-  display: grid;
-  width: 46px;
-  height: 46px;
+.brand-seal {
+  width: 48px;
+  height: auto;
   flex: 0 0 auto;
-  place-items: center;
-  border: 1px solid var(--gold);
   border-radius: 50%;
-  font-family: var(--serif);
-  font-size: 1.05rem;
-  font-weight: 800;
-  letter-spacing: 0.08em;
+  filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.24));
 }
 
 .brand-copy {
@@ -1293,6 +1287,10 @@ details p {
 }
 
 @media (max-width: 559px) {
+  .brand-seal {
+    width: 42px;
+  }
+
   .header-identities {
     gap: 0.55rem;
   }
