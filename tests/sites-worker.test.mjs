@@ -151,3 +151,11 @@ test("exposes the German and English flag controls in the header", async () => {
   assert.match(source, /Deutsch auswählen/);
   assert.match(source, /Select English/);
 });
+
+test("uses dark text for notices on light paper sections", async () => {
+  const response = await request("/styles.css", "text/css");
+  assert.equal(response.status, 200);
+  const source = await response.text();
+  assert.match(source, /\.section--paper \.notice \{[\s\S]*?color: var\(--green-900\);/);
+  assert.match(source, /\.section--paper \.notice strong \{[\s\S]*?color: var\(--green-950\);/);
+});

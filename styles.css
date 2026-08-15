@@ -773,6 +773,17 @@ p {
   color: var(--cream);
 }
 
+.section--paper .notice {
+  border-color: rgba(169, 120, 47, 0.48);
+  border-left-color: var(--gold-dark);
+  background: #f2ead7;
+  color: var(--green-900);
+}
+
+.section--paper .notice strong {
+  color: var(--green-950);
+}
+
 .sponsor-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
