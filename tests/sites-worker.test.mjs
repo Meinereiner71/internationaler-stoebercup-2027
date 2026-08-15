@@ -77,6 +77,15 @@ test("supports clean URLs for every main page", async () => {
   }
 });
 
+test("uses the published dog image on the event page and in its gallery", async () => {
+  const response = await request("/event");
+  assert.equal(response.status, 200);
+  const html = await response.text();
+  assert.match(html, /assets\/hero-dog-clean-720\.jpg/);
+  assert.match(html, /data-gallery="assets\/hero-dog-clean-1376\.jpg"/);
+  assert.doesNotMatch(html, /assets\/hero-dog-(?:720|1376)\.jpg/);
+});
+
 test("serves the sitemap, robots file and FCI source documents", async () => {
   for (const [route, contentType] of [
     ["/sitemap.xml", /^application\/xml/],
