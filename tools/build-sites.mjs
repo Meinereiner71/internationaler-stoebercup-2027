@@ -7,8 +7,8 @@ const client = join(dist, "client");
 const server = join(dist, "server");
 const rootFileExtensions = new Set([".html", ".css", ".js", ".ico", ".xml", ".txt"]);
 const staticAssetFiles = [
-  "hero-dog-1376.jpg",
-  "hero-dog-720.jpg",
+  "hero-dog-clean-1376.jpg",
+  "hero-dog-clean-720.jpg",
   "oekv-logo.png",
   "seal-320.png",
   "stadion-detail.jpg",

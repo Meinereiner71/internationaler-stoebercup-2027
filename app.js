@@ -154,7 +154,7 @@
     upsert("og:type", "website");
     upsert("og:title", document.title);
     upsert("og:description", document.querySelector('meta[name="description"]')?.content || "");
-    upsert("og:image", new URL("assets/hero-dog-1376.jpg", location.href).href);
+    upsert("og:image", new URL("assets/hero-dog-clean-1376.jpg", location.href).href);
   };
   const closeNavigation = (returnFocus = false) => {
     if (!navToggle || !navigation) return;
