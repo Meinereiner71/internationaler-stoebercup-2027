@@ -316,6 +316,12 @@ a {
   color: var(--green-950);
 }
 
+.nav-link--cta:hover,
+.nav-link--cta[aria-current="page"] {
+  border-color: var(--gold-soft);
+  color: var(--green-950);
+}
+
 .language-switcher {
   display: flex;
   gap: 0.25rem;
@@ -1189,7 +1195,7 @@ details p {
   }
 
   .timeline {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 

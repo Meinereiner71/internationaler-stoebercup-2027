@@ -1,5 +1,17 @@
 # Änderungsprotokoll
 
+## 2026-08-15 – Canva-Inhalte und FCI-Grundlagen übernommen
+
+- alte Canva-Veranstaltungsseite vollständig ausgelesen und mit den lokalen deutsch-/englischsprachigen FCI-Pflichtenheften abgeglichen
+- Freitag-bis-Sonntag-Platzhalter durch den bestätigten Zwei-Tage-Ablauf am 22. und 23. Mai 2027 ersetzt
+- FCI-StöPr 1–3, zwei Starts, Länderquoten, Einzel-/Mannschaftswertung, Veterinär- und Versicherungsanforderungen ergänzt
+- österreichischen Qualifikationsweg und Starterplätze aus der bisherigen Veranstaltungsseite übernommen
+- fünf Unterkunftsempfehlungen mit vorhandenen Beschreibungen und Direktlinks konkretisiert
+- deutsche und englische FCI-Grundlagendokumente als lokale Downloads bereitgestellt
+- nicht sendende Formularvorschauen entfernt; Anmeldeweg über nationale Verbände und E-Mail-Kontakt klar dargestellt
+- CTA-Kontrast, Testabdeckung und Sites-Buildgröße verbessert
+- zentrale Quellen- und Release-Dokumentation ergänzt
+
 ## 2026-07-24 – Sites-Veröffentlichung
 
 - OpenAI-Sites-Projekt angelegt und dessen Projektkennung in

@@ -39,7 +39,7 @@
                   data-de="${de}" data-en="${en}">${de}</a></li>`).join("")}
               <li><a class="nav-link nav-link--cta" href="anmeldung.html"
                 ${page === "registration" ? 'aria-current="page"' : ""}
-                data-de="Anmelden" data-en="Register">Anmelden</a></li>
+                data-de="Anmeldeinfos" data-en="Registration info">Anmeldeinfos</a></li>
             </ul>
             <div class="language-switcher" aria-label="Sprache" data-aria-label-de="Sprache" data-aria-label-en="Language">
               <button class="language-button" type="button" data-language="de" aria-pressed="true">DE</button>
@@ -188,21 +188,6 @@
     updateCountdown();
     setInterval(updateCountdown, 1000);
   }
-
-  document.querySelectorAll("form[data-placeholder-form]").forEach((form) => {
-    form.addEventListener("submit", (event) => {
-      event.preventDefault();
-      if (!form.reportValidity()) return;
-      const status = form.querySelector(".form-status");
-      if (status) {
-        status.dataset.visible = "true";
-        status.textContent = language === "de"
-          ? "Ihre Angaben wurden lokal geprüft. Die Übermittlung wird aktiviert, sobald der Formulardienst offiziell freigegeben ist."
-          : "Your details have been checked locally. Submission will be enabled once the form service has been officially approved.";
-        status.focus();
-      }
-    });
-  });
 
   const dialog = document.querySelector("#image-dialog");
   const dialogImage = dialog?.querySelector("img");

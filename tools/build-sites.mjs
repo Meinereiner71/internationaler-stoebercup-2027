@@ -6,6 +6,13 @@ const dist = join(root, "dist");
 const client = join(dist, "client");
 const server = join(dist, "server");
 const rootFileExtensions = new Set([".html", ".css", ".js", ".ico", ".xml", ".txt"]);
+const staticAssetFiles = [
+  "hero-dog-1376.jpg",
+  "hero-dog-720.jpg",
+  "seal-320.png",
+  "stadion-detail.jpg",
+  "stadion.jpg",
+];
 const requiredFiles = [
   "index.html",
   "event.html",
@@ -16,7 +23,11 @@ const requiredFiles = [
   "anmeldung.html",
   "faq.html",
   "sponsoren.html",
+  "impressum.html",
+  "datenschutz.html",
   "404.html",
+  "robots.txt",
+  "sitemap.xml",
   "styles.css",
   "app.js",
 ];
@@ -38,7 +49,11 @@ const staticFiles = rootEntries
 await Promise.all(
   staticFiles.map((file) => cp(join(root, file), join(client, file))),
 );
-await cp(join(root, "assets"), join(client, "assets"), { recursive: true });
+await mkdir(join(client, "assets"), { recursive: true });
+await Promise.all(
+  staticAssetFiles.map((file) => cp(join(root, "assets", file), join(client, "assets", file))),
+);
+await cp(join(root, "documents"), join(client, "documents"), { recursive: true });
 await cp(join(root, "sites", "worker.js"), join(server, "index.js"));
 
 for (const file of requiredFiles) {

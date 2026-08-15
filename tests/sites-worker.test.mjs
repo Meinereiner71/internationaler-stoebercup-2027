@@ -14,6 +14,7 @@ const contentTypes = {
   ".js": "text/javascript; charset=utf-8",
   ".jpg": "image/jpeg",
   ".png": "image/png",
+  ".pdf": "application/pdf",
   ".txt": "text/plain; charset=utf-8",
   ".xml": "application/xml; charset=utf-8",
 };
@@ -63,9 +64,24 @@ test("supports clean URLs for every main page", async () => {
     "/anmeldung",
     "/faq",
     "/sponsoren",
+    "/impressum",
+    "/datenschutz",
   ]) {
     const response = await request(route);
     assert.equal(response.status, 200, route);
+  }
+});
+
+test("serves the sitemap, robots file and FCI source documents", async () => {
+  for (const [route, contentType] of [
+    ["/sitemap.xml", /^application\/xml/],
+    ["/robots.txt", /^text\/plain/],
+    ["/documents/fci-stoepr-pflichtenheft-de.pdf", /^application\/pdf/],
+    ["/documents/fci-article-search-specifications-en.pdf", /^application\/pdf/],
+  ]) {
+    const response = await request(route, "*/*");
+    assert.equal(response.status, 200, route);
+    assert.match(response.headers.get("content-type") ?? "", contentType, route);
   }
 });
 

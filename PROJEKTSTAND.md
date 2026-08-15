@@ -1,6 +1,6 @@
 # Projektstand – Internationaler FCI-Stöbercup 2027
 
-Stand: 24. Juli 2026  
+Stand: 15. August 2026
 Arbeitsbranch: `feature/premium-event-redesign`  
 Zielbranch des Pull Requests: `main`
 
@@ -25,14 +25,21 @@ Zielbranch des Pull Requests: `main`
 - SEO-Basis mit eindeutigen Seitentiteln, Beschreibungen, Open Graph, Sitemap und Robots-Datei
 - Sites-Build mit Cloudflare-Worker, statischen Assets, Kurz-URLs,
   Sicherheits-Headern und eigener 404-Antwort
+- bestätigtes Zwei-Tage-Format am 22. und 23. Mai 2027 ohne frühere Freitag-bis-Sonntag-Unstimmigkeit
+- Bewerbsgrundlagen FCI-StöPr 1–3, zwei Starts, Einzel-/Mannschaftswertung und Länderquoten
+- österreichischer Qualifikationsweg aus der bisherigen Canva-Veranstaltungsseite
+- konkrete Beschreibungen und Direktlinks für fünf Unterkunftsempfehlungen
+- deutsches FCI-Pflichtenheft und englische Spezifikation als lokale Downloads
+- klarer Anmeldeweg über die nationalen Verbände und funktionierender E-Mail-Kontakt statt nicht sendender Scheinformulare
+- erweiterte Routentests für Rechtstexte, Sitemap, Robots-Datei und PDF-Dokumente
 
 ## Bewusste Platzhalter
 
 Vor einer Veröffentlichung müssen folgende Inhalte fachlich oder rechtlich bestätigt werden:
 
-- offizieller Eventname, Datum und genaue Ortsangaben
-- Abweichung zwischen Eventdatum 22.–23. Mai 2027 und gewünschter Freitag-bis-Sonntag-Timeline
-- Klassen, Prüfungsstufen, Modus, Qualifikation und Teilnahmebedingungen
+- endgültige einheitliche Veranstaltungsbezeichnung für alle offiziellen Unterlagen
+- genaue Adresse, Zufahrt, Parkbereiche, Geländeart und Trainingsfläche
+- nationale Ausschreibung, endgültige Meldetermine und lokale Teilnahmehinweise
 - Richterinnen, Richter, Offizielle und Ansprechpersonen
 - Unterkünfte: echte Fotos, Entfernung, Ausstattung, Preise und Hunderegeln
 - Ausschreibung, Reglement, Formulare, Lageplan, Starterlisten und Ergebnisse
@@ -43,7 +50,7 @@ Vor einer Veröffentlichung müssen folgende Inhalte fachlich oder rechtlich bes
 
 ## Formulare
 
-Die Formulare sind im Frontend vollständig gestaltet und validieren Pflichtfelder. Sie übertragen bewusst noch keine Daten. Vor der Aktivierung ist ein vom Veranstalter freigegebener, datenschutzkonformer Formulardienst oder ein eigener Endpunkt erforderlich. Das frühere `mailto:`-Formular wurde entfernt.
+Die nicht sendenden Formularvorschauen wurden entfernt, damit keine Anfrage oder Anmeldung irrtümlich als übermittelt erscheint. Bis zur Freigabe eines datenschutzkonformen Formulardienstes verweist die Kontaktseite auf die bestätigte E-Mail-Adresse; namentliche Wettbewerbsmeldungen erfolgen laut FCI-Pflichtenheft gesammelt über die nationalen Verbände.
 
 ## Pflegehinweise
 
@@ -68,5 +75,6 @@ Die Formulare sind im Frontend vollständig gestaltet und validieren Pflichtfeld
 - Browserkonsole: keine Fehler oder Warnungen
 - Lighthouse Mobile: Performance 91, Barrierefreiheit 100, Best Practices 100, SEO 100
 - `npm test`: Sites-Build sowie Worker-Routen, 404 und Asset-Auslieferung
+- `npm test` am 15. August 2026: 5 Tests bestanden, einschließlich Rechtstexten, Sitemap, Robots-Datei und beiden FCI-PDFs
 
 Browser-Screenshots und Lighthouse-Rohdaten liegen während der Prüfung lokal unter `output/playwright/` und werden nicht versioniert.
