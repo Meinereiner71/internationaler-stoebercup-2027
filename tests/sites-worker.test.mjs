@@ -77,6 +77,22 @@ test("supports clean URLs for every main page", async () => {
   }
 });
 
+test("shows all five approved Canva accommodation photos", async () => {
+  const response = await request("/unterkunft");
+  assert.equal(response.status, 200);
+  const html = await response.text();
+  for (const image of [
+    "seecamping-ploerz.jpg",
+    "camping-lampele.jpg",
+    "seecamping-berghof.jpg",
+    "hildas-home.jpg",
+    "gasthof-waldhof.jpg",
+  ]) {
+    assert.match(html, new RegExp(`assets/${image.replace(".", "\\.")}`), image);
+  }
+  assert.doesNotMatch(html, /Foto folgt nach Freigabe|Photo pending approval/);
+});
+
 test("uses the published dog image on the event page and in its gallery", async () => {
   const response = await request("/event");
   assert.equal(response.status, 200);
@@ -108,7 +124,16 @@ test("returns the custom 404 page for missing HTML routes", async () => {
 });
 
 test("serves local assets with an explicit cache policy", async () => {
-  for (const route of ["/assets/seal-320.png", "/assets/oekv-logo.png", "/assets/hero-dog-clean-1376.jpg"]) {
+  for (const route of [
+    "/assets/seal-320.png",
+    "/assets/oekv-logo.png",
+    "/assets/hero-dog-clean-1376.jpg",
+    "/assets/seecamping-ploerz.jpg",
+    "/assets/camping-lampele.jpg",
+    "/assets/seecamping-berghof.jpg",
+    "/assets/hildas-home.jpg",
+    "/assets/gasthof-waldhof.jpg",
+  ]) {
     const response = await request(route, "image/png");
     assert.equal(response.status, 200, route);
     assert.match(response.headers.get("cache-control") ?? "", /max-age=604800/, route);
