@@ -1258,16 +1258,16 @@ details p {
     min-height: 100%;
   }
 
-  .grid--4 {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-  }
-
   .sponsor-grid {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 }
 
 @media (min-width: 1180px) {
+  .grid--4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
   .nav-toggle {
     display: none;
   }

@@ -81,6 +81,8 @@ test("serves the sitemap, robots file and FCI source documents", async () => {
     ["/robots.txt", /^text\/plain/],
     ["/documents/fci-stoepr-pflichtenheft-de.pdf", /^application\/pdf/],
     ["/documents/fci-article-search-specifications-en.pdf", /^application\/pdf/],
+    ["/documents/teilnahmebestimmungen-2027-de.pdf", /^application\/pdf/],
+    ["/documents/competition-regulations-2027-en.pdf", /^application\/pdf/],
   ]) {
     const response = await request(route, "*/*");
     assert.equal(response.status, 200, route);
