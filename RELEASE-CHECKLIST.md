@@ -1,6 +1,6 @@
 # Release-Checkliste – Internationaler FCI-StöPr Wettbewerb 2027
 
-Stand: 15. August 2026
+Stand: 16. August 2026
 
 ## Erledigt
 
@@ -12,23 +12,28 @@ Stand: 15. August 2026
 - [x] deutsches und englisches FCI-Pflichtenheft als lokale Downloads
 - [x] keine irreführenden, nicht sendenden Formulare
 - [x] Mobile-/Desktop-Grundprüfung und automatisierte Build-/Routentests
+- [x] bestätigte Betreiber-, Vereins- und Veranstaltungsdaten eingetragen
+- [x] sichtbare interne Entwurfsvermerke aus Impressum und Datenschutz entfernt
+- [x] öffentliche Freigabe durch den Benutzer erteilt
+- [x] Sites-Zugriff bewusst öffentlich gestellt
+- [x] öffentlicher Abruf ohne OpenAI-Anmeldung geprüft
 
-## Vor neuer privater Vorschau
+## Vor jeder weiteren Aktualisierung
 
 - [ ] abschließende Text- und Linkkontrolle
 - [ ] Mobilprüfung für die geänderten Seiten Event, Programm, Unterkunft, Downloads, Kontakt und Anmeldung
 - [ ] Projektstand und Quellen aktuell
 
-## Vor öffentlicher Freigabe
+## Laufend zu ergänzen
 
 - [ ] einheitliche offizielle Veranstaltungsbezeichnung bestätigen
-- [ ] genaue Adresse, Zufahrt, Parken, Geländeart und Trainingsfläche bestätigen
+- [x] genaue Adresse und Parkmöglichkeiten bestätigt
+- [ ] Zufahrtsdetails, Geländeart und Trainingsfläche bestätigen
 - [ ] Richter, Offizielle und Ansprechpartner bestätigen
 - [ ] nationale Ausschreibung, Meldeschluss, Zeitplan und Teilnehmerpaket bereitstellen
-- [ ] Unterkunftsfotos und aktuelle Hunderegeln freigeben
+- [x] vorhandene Unterkunftsfotos eingebunden
+- [ ] aktuelle Hunderegeln direkt bei den Unterkünften bestätigen
 - [ ] Sponsoren, Logos und Nutzungsrechte freigeben
-- [ ] Impressum und Datenschutz rechtlich vervollständigen
+- [ ] externe rechtliche Prüfung von Impressum und Datenschutz bei Bedarf veranlassen
 - [ ] Formularlösung nur bei Bedarf auswählen und datenschutzrechtlich dokumentieren
-- [ ] private Vorschau visuell und inhaltlich freigeben
-- [ ] Sites-Zugriff bewusst öffentlich stellen
-- [ ] Pull Request aus Draft nehmen; `main` erst danach mergen
+- [ ] Pull Request und `main` nur nach gesonderter Freigabe ändern

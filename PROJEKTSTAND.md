@@ -1,6 +1,6 @@
 # Projektstand – Internationaler FCI-Stöbercup 2027
 
-Stand: 15. August 2026
+Stand: 16. August 2026
 Arbeitsbranch: `feature/premium-event-redesign`  
 Zielbranch des Pull Requests: `main`
 
@@ -8,9 +8,9 @@ Zielbranch des Pull Requests: `main`
 
 - OpenAI Sites:
   `https://internationaler-stoebercup-2027.meinereiner71.chatgpt.site`
-- Zugriff: private, nur für den Eigentümer freigegebene Produktionsvorschau
+- Zugriff: öffentlich, ohne OpenAI-Anmeldung erreichbar
 - GitHub Pull Request: `feature/premium-event-redesign` nach `main`
-- `main` bleibt bis zur Freigabe unverändert.
+- Öffentliche Freigabe am 16. August 2026 ausdrücklich durch den Benutzer erteilt; `main` blieb unverändert.
 
 ## Umgesetzt
 
@@ -33,20 +33,17 @@ Zielbranch des Pull Requests: `main`
 - klarer Anmeldeweg über die nationalen Verbände und funktionierender E-Mail-Kontakt statt nicht sendender Scheinformulare
 - erweiterte Routentests für Rechtstexte, Sitemap, Robots-Datei und PDF-Dokumente
 
-## Bewusste Platzhalter
+## Später zu ergänzende Veranstaltungsdetails
 
-Vor einer Veröffentlichung müssen folgende Inhalte fachlich oder rechtlich bestätigt werden:
+Die Website ist als Vorankündigung veröffentlicht. Folgende Details werden nach ihrer Bestätigung laufend ergänzt:
 
-- endgültige einheitliche Veranstaltungsbezeichnung für alle offiziellen Unterlagen
-- genaue Adresse, Zufahrt, Parkbereiche, Geländeart und Trainingsfläche
 - nationale Ausschreibung, endgültige Meldetermine und lokale Teilnahmehinweise
 - Richterinnen, Richter, Offizielle und Ansprechpersonen
-- Unterkünfte: echte Fotos, Entfernung, Ausstattung, Preise und Hunderegeln
-- Ausschreibung, Reglement, Formulare, Lageplan, Starterlisten und Ergebnisse
-- Anmeldefristen und datenschutzkonformer Formulardienst
-- Adresse, Telefon, Kartenlösung, Presse-, Sponsoring- und Social-Media-Kontakte
+- Geländeart, Trainingsfläche und detaillierter Zeitplan
+- Ausschreibung, Lageplan, Starterlisten und Ergebnisse
+- Anmeldefristen und gegebenenfalls eine datenschutzkonforme Formularlösung
 - Sponsoren, Logos und mögliche Sponsoringunterlagen
-- vollständiges, rechtlich geprüftes Impressum und Datenschutzerklärung
+- bestätigte Presse-, Sponsoring- und Social-Media-Kontakte
 
 ## Formulare
 
@@ -59,7 +56,7 @@ Die nicht sendenden Formularvorschauen wurden entfernt, damit keine Anfrage oder
 - Farben, Layout, Komponenten und Breakpoints liegen zentral in `styles.css`.
 - Dateien für das Downloadcenter erst verlinken, wenn sie lokal im Repository vorhanden sind.
 - Keine Angaben zur Hundefreundlichkeit veröffentlichen, bevor sie direkt beim Unterkunftsbetrieb verifiziert wurden.
-- `main` erst nach visueller, inhaltlicher und rechtlicher Freigabe aktualisieren.
+- `main` weiterhin nur nach einer gesonderten ausdrücklichen Freigabe aktualisieren.
 
 ## Qualitätssicherung
 
@@ -75,6 +72,7 @@ Die nicht sendenden Formularvorschauen wurden entfernt, damit keine Anfrage oder
 - Browserkonsole: keine Fehler oder Warnungen
 - Lighthouse Mobile: Performance 91, Barrierefreiheit 100, Best Practices 100, SEO 100
 - `npm test`: Sites-Build sowie Worker-Routen, 404 und Asset-Auslieferung
-- `npm test` am 15. August 2026: 5 Tests bestanden, einschließlich Rechtstexten, Sitemap, Robots-Datei und beiden FCI-PDFs
+- `npm test` am 16. August 2026: 15 Tests bestanden, einschließlich Rechtstexten, Sitemap, Robots-Datei, Qualifikationsweg und FCI-PDFs
+- öffentliche Start- und Datenschutzseite ohne Anmeldung mit HTTP-Status 200 geprüft
 
 Browser-Screenshots und Lighthouse-Rohdaten liegen während der Prüfung lokal unter `output/playwright/` und werden nicht versioniert.

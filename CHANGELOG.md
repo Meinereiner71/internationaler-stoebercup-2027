@@ -4,7 +4,8 @@
 
 - sichtbare interne Entwurfs- und Freigabevermerke aus Impressum und Datenschutz entfernt
 - unbelegten Platzhalterblock zu Haftung und Urheberrecht entfernt
-- öffentliche Erreichbarkeit ohne OpenAI-Anmeldung technisch vorbereitet
+- Sites-Zugriff nach ausdrücklicher Benutzerfreigabe öffentlich gestellt
+- öffentlichen Abruf ohne OpenAI-Anmeldung erfolgreich geprüft
 
 ## 2026-08-16 – Internationale Qualifikation aus dem Österreich-Finale bestätigt
 
