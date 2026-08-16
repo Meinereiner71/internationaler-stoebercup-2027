@@ -56,6 +56,8 @@ test("serves the homepage and adds security headers", async () => {
   assert.match(html, /data-en="International Article Search Competition 2027"/);
   assert.match(html, /data-de="Villach, Kärnten, Österreich" data-en="Villach, Carinthia, Austria"/);
   assert.match(html, /data-de="Nase runter\. Bühne frei\." data-en="Nose down\. Game on\."/);
+  assert.match(html, /data-de="Vorankündigung:" data-en="Advance announcement:"/);
+  assert.match(html, /in den kommenden Monaten laufend ergänzt/);
   assert.match(html, /Drei Werte verbinden/);
   assert.doesNotMatch(html, /data-de="Fairness"/);
 });
@@ -150,6 +152,16 @@ test("exposes the German and English flag controls in the header", async () => {
   assert.match(source, /aria-pressed="true"/);
   assert.match(source, /Deutsch auswählen/);
   assert.match(source, /Select English/);
+  assert.match(source, /Offizielle Vorankündigung · bestätigte Informationen werden laufend ergänzt/);
+});
+
+test("explains the advance-announcement status and confirmed parking in the FAQ", async () => {
+  const response = await request("/faq");
+  assert.equal(response.status, 200);
+  const html = await response.text();
+  assert.match(html, /Ist diese Website bereits die endgültige Ausschreibung\?/);
+  assert.match(html, /Website ist die offizielle Vorankündigung/);
+  assert.match(html, /Am Sportzentrum Landskron sind Parkmöglichkeiten vor Ort vorhanden/);
 });
 
 test("uses dark text for notices on light paper sections", async () => {

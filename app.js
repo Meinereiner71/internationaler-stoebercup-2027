@@ -106,8 +106,8 @@
         </div>
         <div class="container footer-bottom">
           <span>© <span data-current-year></span> ÖGV St. Magdalen</span>
-          <span data-de="Angaben vorbehaltlich offizieller Bestätigung."
-            data-en="Information subject to official confirmation.">Angaben vorbehaltlich offizieller Bestätigung.</span>
+          <span data-de="Offizielle Vorankündigung · bestätigte Informationen werden laufend ergänzt."
+            data-en="Official advance announcement · confirmed information is updated continuously.">Offizielle Vorankündigung · bestätigte Informationen werden laufend ergänzt.</span>
         </div>
       </footer>`;
   }
