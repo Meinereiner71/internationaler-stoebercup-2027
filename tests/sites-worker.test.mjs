@@ -164,6 +164,10 @@ test("explains Austrian qualification and international eligibility on one dedic
   assert.match(html, /StöPr 3 an zwei Tagen bei zwei Leistungsrichtern/);
   assert.match(html, /ÖKV-Auswahl folgt/);
   assert.match(html, /3 · 3 · 5/);
+  assert.match(html, /Laufender Zwischenstand/);
+  assert.match(html, /Region Süd ausgewählt/);
+  assert.match(html, /docs\.google\.com\/spreadsheets\/d\/1LDnrwbFw837AQZ8SkO3GYkRJ4auDBiSO5bsVq00_TcY/);
+  assert.match(html, /Aktuellen Cupstand öffnen/);
   assert.match(html, /Internationale Teilnahme/);
   assert.match(html, /nationalen Verband/);
   assert.match(html, /zwei Reserveteilnehmende/);

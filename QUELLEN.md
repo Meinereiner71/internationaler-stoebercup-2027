@@ -1,6 +1,6 @@
 # Quellen – Internationaler FCI-StöPr Wettbewerb 2027
 
-Stand: 15. August 2026
+Stand: 16. August 2026
 
 ## Primäre Projektquellen
 
@@ -9,13 +9,14 @@ Stand: 15. August 2026
 - Deutsches Original: `C:\Users\offic\Dropbox\Dokumente\Codex\Projekte\Homepages\Internationaler Stöbercup\originale\regelwerk\Pflichtenheft_International_Stöbern.pdf`.
 - Englisches Original: `C:\Users\offic\Dropbox\Dokumente\Codex\Projekte\Homepages\Internationaler Stöbercup\originale\regelwerk\Specifications_Article Serce_International.pdf`.
 - Deutsche und englische Veranstaltungsplakate unter `Internationaler Stöbercup\originale\grafiken\`.
+- Laufender ÖKV-Stöbercup-Stand 2026 als externe Google-Tabelle, vom Benutzer am 16. August 2026 bereitgestellt: `https://docs.google.com/spreadsheets/d/1LDnrwbFw837AQZ8SkO3GYkRJ4auDBiSO5bsVq00_TcY/edit?gid=292608136#gid=292608136`. Das verlinkte Tabellenblatt ist „ÖKV Stöbercup 2026 Region Süd“.
 
 ## Übernommene Inhalte
 
 - 22. und 23. Mai 2027, Sportzentrum Landskron, Villach.
 - FCI-StöPr 1–3, zwei aufeinanderfolgende Bewerbstage, Einzel- und Mannschaftswertung.
 - Länderquoten 3 / 3 / 5 und gesammelte Meldung durch nationale Verbände.
-- österreichischer Qualifikationsweg mit Regionalcup-Ergebnissen, Startpflicht und 3 / 3 / 5 Startplätzen.
+- österreichischer Qualifikationsweg nach dem gültigen ÖKV-Reglement 2026; nationaler Finalweg und internationale Startplätze 3 / 3 / 5 sind klar getrennt.
 - Unterkunftsauswahl und Beschreibungen für Seecamping Plörz, Ideal Camping Lampele, Seecamping Berghof, Hilda’s Home und Gasthof Waldhof.
 
 ## Grenzen

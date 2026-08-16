@@ -1,5 +1,11 @@
 # Änderungsprotokoll
 
+## 2026-08-16 – Laufenden Regionalcup-Stand verlinkt
+
+- aktuelle Google-Tabelle der ÖKV-Regionalturniere auf der Qualifikationsseite verlinkt
+- ausgewählte Region Süd und laufenden Zwischenstand transparent gekennzeichnet
+- Tabelle klar vom verbindlichen ÖKV-Reglement und den offiziellen Ergebnissen abgegrenzt
+
 ## 2026-08-16 – Österreichischen Qualifikationsweg präzisiert
 
 - ÖKV Regional Stöbercup 2026 als nachvollziehbaren Fünf-Schritte-Weg dargestellt
