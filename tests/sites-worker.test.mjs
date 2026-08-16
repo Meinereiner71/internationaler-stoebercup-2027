@@ -159,3 +159,32 @@ test("uses dark text for notices on light paper sections", async () => {
   assert.match(source, /\.section--paper \.notice \{[\s\S]*?color: var\(--green-900\);/);
   assert.match(source, /\.section--paper \.notice strong \{[\s\S]*?color: var\(--green-950\);/);
 });
+
+test("publishes the confirmed club, privacy and venue details without internal placeholders", async () => {
+  const imprint = await (await request("/impressum")).text();
+  assert.match(imprint, /Maria Gailerstraße 11/);
+  assert.match(imprint, /ZVR-Zahl: 185947851/);
+  assert.match(imprint, /Redaktionelle Verantwortung[\s\S]*Rene Franc/);
+  assert.doesNotMatch(imprint, /Telefon: wird bestätigt|Telephone: to be confirmed/);
+
+  const privacy = await (await request("/datenschutz")).text();
+  assert.match(privacy, /Vorstand des ÖGV St\. Magdalen Zugriff/);
+  assert.match(privacy, /spätestens zwei Monate nach Ende der Veranstaltung am 23\. Juli 2027/);
+  assert.match(privacy, /agb-server\.gmx\.net\/datenschutz-at/);
+
+  const contact = await (await request("/kontakt")).text();
+  assert.match(contact, /Hochfeldstraße 33/);
+  assert.match(contact, /Parkmöglichkeiten vor Ort/);
+  assert.match(contact, /Geländeart und Trainingsfläche werden rechtzeitig vor dem Bewerb bekannt gegeben/);
+  assert.doesNotMatch(contact, /Kartenbereich wird|Map will be embedded/);
+
+  const event = await (await request("/event")).text();
+  assert.match(event, /data-de="Werden noch bestimmt" data-en="To be appointed"/);
+
+  const sponsors = await (await request("/sponsoren")).text();
+  assert.match(sponsors, /Sponsoren folgen/);
+  assert.doesNotMatch(sponsors, /sponsor-placeholder|Partner wird bekannt gegeben/);
+
+  const registration = await (await request("/anmeldung")).text();
+  assert.doesNotMatch(registration, /Dokumenten-Upload|Document upload/);
+});

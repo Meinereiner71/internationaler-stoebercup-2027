@@ -17,10 +17,31 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "WebSite",
-        "name": "Internationaler FCI-Stöbercup 2027",
-        "url": "https://internationaler-stoebercup-2027.meinereiner71.chatgpt.site/",
-        "inLanguage": ["de", "en"]
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "name": "Internationaler FCI-Stöbercup 2027",
+            "url": "https://internationaler-stoebercup-2027.meinereiner71.chatgpt.site/",
+            "inLanguage": ["de", "en"]
+          },
+          {
+            "@type": "SportsEvent",
+            "name": "Internationaler FCI-Stöbercup 2027",
+            "startDate": "2027-05-22",
+            "endDate": "2027-05-23",
+            "location": {
+              "@type": "Place",
+              "name": "Sportzentrum Landskron",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Hochfeldstraße 33",
+                "postalCode": "9523",
+                "addressLocality": "Villach",
+                "addressCountry": "AT"
+              }
+            }
+          }
+        ]
       }
     </script>
     <link rel="stylesheet" href="styles.css">
@@ -108,9 +129,9 @@
           <div class="reveal">
             <p class="eyebrow" data-de="Austragungsort" data-en="Venue">Austragungsort</p>
             <h2>Sportzentrum Landskron</h2>
-            <p data-de="Der Wettbewerb findet im Sportzentrum Landskron und auf den umliegenden Feldern statt – nahe Burg Landskron und Ossiacher See. Bodenart, Trainingsfläche, Zufahrt und Parkbereiche werden im Teilnehmerpaket konkretisiert."
-              data-en="The competition takes place at the Landskron Sports Centre and on the surrounding fields, close to Landskron Castle and Lake Ossiach. Terrain, training area, access and parking zones will be detailed in the participant pack.">
-              Der Wettbewerb findet im Sportzentrum Landskron und auf den umliegenden Feldern statt – nahe Burg Landskron und Ossiacher See. Bodenart, Trainingsfläche, Zufahrt und Parkbereiche werden im Teilnehmerpaket konkretisiert.
+            <p data-de="Der Wettbewerb findet im Sportzentrum Landskron, Hochfeldstraße 33, 9523 Villach, statt. Parkmöglichkeiten sind vor Ort vorhanden. Geländeart und Trainingsfläche werden rechtzeitig vor dem Bewerb bekannt gegeben."
+              data-en="The competition takes place at the Landskron Sports Centre, Hochfeldstraße 33, 9523 Villach. Parking is available on site. Terrain details and the training area will be announced in good time before the competition.">
+              Der Wettbewerb findet im Sportzentrum Landskron, Hochfeldstraße 33, 9523 Villach, statt. Parkmöglichkeiten sind vor Ort vorhanden. Geländeart und Trainingsfläche werden rechtzeitig vor dem Bewerb bekannt gegeben.
             </p>
             <a class="button" href="kontakt.html" data-de="Ort &amp; Kontakt" data-en="Venue &amp; contact">Ort &amp; Kontakt</a>
           </div>
@@ -162,12 +183,7 @@
               Bestätigte Partner und Sponsoren werden hier mit ihren offiziellen Logos vorgestellt.
             </p>
           </div>
-          <div class="sponsor-grid reveal">
-            <div class="sponsor-placeholder" data-de="Partner wird bekannt gegeben" data-en="Partner to be announced">Partner wird bekannt gegeben</div>
-            <div class="sponsor-placeholder" data-de="Partner wird bekannt gegeben" data-en="Partner to be announced">Partner wird bekannt gegeben</div>
-            <div class="sponsor-placeholder" data-de="Partner wird bekannt gegeben" data-en="Partner to be announced">Partner wird bekannt gegeben</div>
-            <div class="sponsor-placeholder" data-de="Partner wird bekannt gegeben" data-en="Partner to be announced">Partner wird bekannt gegeben</div>
-          </div>
+          <div class="notice reveal"><strong data-de="Sponsoren folgen:" data-en="Sponsors coming soon:">Sponsoren folgen:</strong> <span data-de="Bestätigte Partner werden hier mit ihren freigegebenen Logos und Links vorgestellt." data-en="Confirmed partners will be presented here with their approved logos and links.">Bestätigte Partner werden hier mit ihren freigegebenen Logos und Links vorgestellt.</span></div>
           <div class="button-row center-actions"><a class="button button--ghost" href="sponsoren.html" data-de="Sponsorenbereich" data-en="Sponsors area">Sponsorenbereich</a></div>
         </div>
       </section>
