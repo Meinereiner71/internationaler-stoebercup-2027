@@ -153,9 +153,16 @@ test("explains Austrian qualification and international eligibility on one dedic
   const response = await request("/qualifikation");
   assert.equal(response.status, 200);
   const html = await response.text();
-  assert.match(html, /Der österreichische Qualifikationsweg/);
-  assert.match(html, /mindestens drei positive Ergebnisse/);
-  assert.match(html, /FCI-StöPr 1 und FCI-StöPr 2/);
+  assert.match(html, /Vom Regionalcup zum nationalen Finale/);
+  assert.match(html, /vier Turniere/);
+  assert.match(html, /in der der erste Start erfolgt/);
+  assert.match(html, /niedrigste Ergebnis gestrichen/);
+  assert.match(html, /Mindestens drei positive Regionalcup-Ergebnisse/);
+  assert.match(html, /ersten drei jeder Stufe qualifizieren sich automatisch/);
+  assert.match(html, /qualifiziert sich jeweils die Hälfte/);
+  assert.match(html, /Qualifizierte müssen sich gesondert anmelden/);
+  assert.match(html, /StöPr 3 an zwei Tagen bei zwei Leistungsrichtern/);
+  assert.match(html, /ÖKV-Auswahl folgt/);
   assert.match(html, /3 · 3 · 5/);
   assert.match(html, /Internationale Teilnahme/);
   assert.match(html, /nationalen Verband/);
@@ -164,6 +171,8 @@ test("explains Austrian qualification and international eligibility on one dedic
   assert.match(html, /documents\/competition-regulations-2027-en\.pdf/);
   assert.match(html, /documents\/fci-pruefungsordnung-2025-de\.pdf/);
   assert.match(html, /documents\/fci-trial-regulations-2025-en\.pdf/);
+  assert.match(html, /St%C3%B6ber%20Cup%202026/);
+  assert.doesNotMatch(html, /FCI-StöPr 1 und FCI-StöPr 2 müssen jeweils mindestens einmal/);
 });
 
 test("uses qualification as a main navigation item and keeps secondary pages in the footer", async () => {

@@ -1,5 +1,14 @@
 # Änderungsprotokoll
 
+## 2026-08-16 – Österreichischen Qualifikationsweg präzisiert
+
+- ÖKV Regional Stöbercup 2026 als nachvollziehbaren Fünf-Schritte-Weg dargestellt
+- Regionswahl, vier Regionalturniere, Cupwertung, Finalqualifikation und Nachrücken erklärt
+- Wertung der drei besten Ergebnisse sowie Mindestzahl positiver Ergebnisse ergänzt
+- Qualifikationsquote für das nationale Finale und Regel zum Stufenwechsel aufgenommen
+- nationales Finale klar von der noch zu bestätigenden Nominierung für Team Österreich 2027 getrennt
+- offizielles ÖKV-Reglement direkt als verbindliche Quelle verlinkt
+
 ## 2026-08-16 – Navigation und Qualifikation vereinfacht
 
 - „Qualifikation“ als eigenen deutsch-englischen Hauptmenüpunkt ergänzt
