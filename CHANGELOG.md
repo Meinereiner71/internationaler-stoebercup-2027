@@ -1,5 +1,10 @@
 # Änderungsprotokoll
 
+## 2026-08-16 – Qualifikationslink besser lesbar
+
+- Link „Zur Qualifikation“ auf der hellen Hinweisfläche in dunkles Grün geändert
+- Kontrastregel automatisiert abgesichert und Stylesheet-Version aktualisiert
+
 ## 2026-08-16 – Öffentliche Freigabe vorbereitet
 
 - sichtbare interne Entwurfs- und Freigabevermerke aus Impressum und Datenschutz entfernt

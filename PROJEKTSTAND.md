@@ -74,5 +74,6 @@ Die nicht sendenden Formularvorschauen wurden entfernt, damit keine Anfrage oder
 - `npm test`: Sites-Build sowie Worker-Routen, 404 und Asset-Auslieferung
 - `npm test` am 16. August 2026: 15 Tests bestanden, einschließlich Rechtstexten, Sitemap, Robots-Datei, Qualifikationsweg und FCI-PDFs
 - öffentliche Start- und Datenschutzseite ohne Anmeldung mit HTTP-Status 200 geprüft
+- Link „Zur Qualifikation“ auf der hellen Hinweisfläche mit dunkelgrünem Hochkontrast-Stil abgesichert
 
 Browser-Screenshots und Lighthouse-Rohdaten liegen während der Prüfung lokal unter `output/playwright/` und werden nicht versioniert.

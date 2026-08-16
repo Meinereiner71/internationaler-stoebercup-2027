@@ -243,6 +243,7 @@ test("uses dark text for notices on light paper sections", async () => {
   const source = await response.text();
   assert.match(source, /\.section--paper \.notice \{[\s\S]*?color: var\(--green-900\);/);
   assert.match(source, /\.section--paper \.notice strong \{[\s\S]*?color: var\(--green-950\);/);
+  assert.match(source, /\.section--paper \.notice \.text-link \{[\s\S]*?color: var\(--green-950\);/);
   assert.match(source, /\.section--paper \.section-heading p:last-child \{[\s\S]*?color: #435047;/);
   assert.match(source, /url\("assets\/hero-dog-clean-720\.jpg"\)/);
   assert.doesNotMatch(source, /url\("assets\/hero-dog-720\.jpg"\)/);
