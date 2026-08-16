@@ -112,6 +112,7 @@ test("serves the sitemap, robots file and FCI source documents", async () => {
     ["/documents/fci-stoepr-pflichtenheft-de.pdf", /^application\/pdf/],
     ["/documents/fci-article-search-specifications-en.pdf", /^application\/pdf/],
     ["/documents/fci-pruefungsordnung-2025-de.pdf", /^application\/pdf/],
+    ["/documents/fci-trial-regulations-2025-en.pdf", /^application\/pdf/],
     ["/documents/teilnahmebestimmungen-2027-de.pdf", /^application\/pdf/],
     ["/documents/competition-regulations-2027-en.pdf", /^application\/pdf/],
   ]) {
@@ -121,13 +122,17 @@ test("serves the sitemap, robots file and FCI source documents", async () => {
   }
 });
 
-test("identifies the German FCI 2025 regulations and the article-search section", async () => {
+test("identifies both FCI 2025 regulations and their article-search sections", async () => {
   const response = await request("/downloads");
   assert.equal(response.status, 200);
   const html = await response.text();
   assert.match(html, /FCI-Prüfungsordnung 2025/);
   assert.match(html, /vollständigen Regeln der FCI-StöPr 1–3 stehen auf den Seiten 80–82/);
   assert.match(html, /documents\/fci-pruefungsordnung-2025-de\.pdf/);
+  assert.match(html, /FCI Trial Regulations 2025/);
+  assert.match(html, /FCI-Article Search 1–3/);
+  assert.match(html, /pages 77–80/);
+  assert.match(html, /documents\/fci-trial-regulations-2025-en\.pdf/);
 });
 
 test("returns the custom 404 page for missing HTML routes", async () => {
