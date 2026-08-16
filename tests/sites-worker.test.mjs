@@ -254,11 +254,13 @@ test("publishes the confirmed club, privacy and venue details without internal p
   assert.match(imprint, /ZVR-Zahl: 185947851/);
   assert.match(imprint, /Redaktionelle Verantwortung[\s\S]*Rene Franc/);
   assert.doesNotMatch(imprint, /Telefon: wird bestätigt|Telephone: to be confirmed/);
+  assert.doesNotMatch(imprint, /Rechtliche Endprüfung|Final legal review|vor Veröffentlichung rechtlich geprüft/);
 
   const privacy = await (await request("/datenschutz")).text();
   assert.match(privacy, /Vorstand des ÖGV St\. Magdalen Zugriff/);
   assert.match(privacy, /spätestens zwei Monate nach Ende der Veranstaltung am 23\. Juli 2027/);
   assert.match(privacy, /agb-server\.gmx\.net\/datenschutz-at/);
+  assert.doesNotMatch(privacy, /Arbeitsfassung|Working draft|vor der öffentlichen Freigabe/);
 
   const contact = await (await request("/kontakt")).text();
   assert.match(contact, /Hochfeldstraße 33/);

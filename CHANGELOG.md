@@ -1,5 +1,11 @@
 # Änderungsprotokoll
 
+## 2026-08-16 – Öffentliche Freigabe vorbereitet
+
+- sichtbare interne Entwurfs- und Freigabevermerke aus Impressum und Datenschutz entfernt
+- unbelegten Platzhalterblock zu Haftung und Urheberrecht entfernt
+- öffentliche Erreichbarkeit ohne OpenAI-Anmeldung technisch vorbereitet
+
 ## 2026-08-16 – Internationale Qualifikation aus dem Österreich-Finale bestätigt
 
 - Plätze 1 bis 3 in FCI-StöPr 1 und 2 als internationale Qualifikationsplätze ausgewiesen
