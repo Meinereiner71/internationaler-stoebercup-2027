@@ -1,5 +1,18 @@
 # Änderungsprotokoll
 
+## 2026-08-16 – Navigation und Qualifikation vereinfacht
+
+- „Qualifikation“ als eigenen deutsch-englischen Hauptmenüpunkt ergänzt
+- österreichischen Auswahlweg und internationale Teilnahme klar getrennt
+- verbindliche Teilnahmebestimmungen und FCI-Prüfungsordnung direkt verknüpft
+- Startseite und Wettbewerbsseite von wiederholten Detailblöcken entlastet
+- FAQ und Sponsoren aus der Hauptnavigation in den Footer verschoben
+- nicht verfügbare Schein-Downloads und Dummy-Metadaten entfernt
+- Google-Maps-Route zum Sportzentrum Landskron ergänzt
+- Kontrast auf hellen Inhaltsflächen und veralteten Bildpfad korrigiert
+- Cache-Version für gemeinsame Styles und Navigation aktualisiert
+- Struktur, Sprachumschaltung und 15 automatisierte Prüfungen bestanden
+
 ## 2026-08-15 – Canva-Inhalte und FCI-Grundlagen übernommen
 
 - alte Canva-Veranstaltungsseite vollständig ausgelesen und mit den lokalen deutsch-/englischsprachigen FCI-Pflichtenheften abgeglichen

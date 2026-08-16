@@ -3,13 +3,12 @@
 
   const pages = [
     ["index.html", "home", "Start", "Home"],
-    ["event.html", "event", "Event", "Event"],
+    ["event.html", "event", "Wettbewerb", "Competition"],
+    ["qualifikation.html", "qualification", "Qualifikation", "Qualification"],
     ["programm.html", "program", "Programm", "Programme"],
     ["unterkunft.html", "stay", "Unterkunft", "Accommodation"],
     ["downloads.html", "downloads", "Downloads", "Downloads"],
-    ["kontakt.html", "contact", "Kontakt", "Contact"],
-    ["faq.html", "faq", "FAQ", "FAQ"],
-    ["sponsoren.html", "sponsors", "Sponsoren", "Sponsors"]
+    ["kontakt.html", "contact", "Kontakt", "Contact"]
   ];
 
   const page = document.documentElement.dataset.page || "home";
@@ -87,6 +86,7 @@
             <div class="footer-title" data-de="Event" data-en="Event">Event</div>
             <div class="footer-links">
               <a href="event.html" data-de="Über den Bewerb" data-en="About the competition">Über den Bewerb</a>
+              <a href="qualifikation.html" data-de="Qualifikation" data-en="Qualification">Qualifikation</a>
               <a href="programm.html" data-de="Programm" data-en="Programme">Programm</a>
               <a href="unterkunft.html" data-de="Unterkunft" data-en="Accommodation">Unterkunft</a>
               <a href="downloads.html" data-de="Downloadcenter" data-en="Download centre">Downloadcenter</a>
@@ -96,9 +96,9 @@
             <div class="footer-title" data-de="Information" data-en="Information">Information</div>
             <div class="footer-links">
               <a href="kontakt.html" data-de="Kontakt" data-en="Contact">Kontakt</a>
+              <a href="anmeldung.html" data-de="Anmeldeinformationen" data-en="Registration information">Anmeldeinformationen</a>
               <a href="faq.html">FAQ</a>
               <a href="sponsoren.html" data-de="Sponsoren" data-en="Sponsors">Sponsoren</a>
-              <span data-de="Social Media: Kanäle folgen" data-en="Social media: Channels to follow">Social Media: Kanäle folgen</span>
               <a href="impressum.html" data-de="Impressum" data-en="Legal notice">Impressum</a>
               <a href="datenschutz.html" data-de="Datenschutz" data-en="Privacy">Datenschutz</a>
             </div>

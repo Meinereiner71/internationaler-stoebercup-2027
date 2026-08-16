@@ -22,6 +22,7 @@ const staticAssetFiles = [
 const requiredFiles = [
   "index.html",
   "event.html",
+  "qualifikation.html",
   "programm.html",
   "unterkunft.html",
   "downloads.html",

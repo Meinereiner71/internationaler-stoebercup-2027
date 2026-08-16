@@ -626,6 +626,10 @@ p {
   font-size: 1.05rem;
 }
 
+.section--paper .section-heading p:last-child {
+  color: #435047;
+}
+
 .grid {
   display: grid;
   gap: 1rem;
@@ -808,7 +812,7 @@ p {
   border-bottom: 1px solid var(--line);
   background:
     linear-gradient(90deg, rgba(7, 27, 18, 0.96), rgba(7, 27, 18, 0.52)),
-    url("assets/hero-dog-720.jpg") center / cover;
+    url("assets/hero-dog-clean-720.jpg") center / cover;
 }
 
 .page-hero::after {

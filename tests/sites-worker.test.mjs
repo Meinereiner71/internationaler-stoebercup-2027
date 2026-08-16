@@ -65,6 +65,7 @@ test("serves the homepage and adds security headers", async () => {
 test("supports clean URLs for every main page", async () => {
   for (const route of [
     "/event",
+    "/qualifikation",
     "/programm",
     "/unterkunft",
     "/downloads",
@@ -135,6 +136,47 @@ test("identifies both FCI 2025 regulations and their article-search sections", a
   assert.match(html, /documents\/fci-trial-regulations-2025-en\.pdf/);
 });
 
+test("labels both participation documents consistently and links the confirmed venue", async () => {
+  const response = await request("/downloads");
+  assert.equal(response.status, 200);
+  const html = await response.text();
+  assert.match(html, /Teilnahmebestimmungen · Englisch/);
+  assert.match(html, /Conditions of participation · English/);
+  assert.doesNotMatch(html, /Wettbewerbsregeln · Englisch/);
+  assert.match(html, /data-de="Lage &amp; Route" data-en="Location &amp; directions"/);
+  assert.match(html, /Hochfeldstraße 33, 9523 Villach, Österreich/);
+  assert.match(html, /google\.com\/maps\/search\/\?api=1&amp;query=Hochfeldstra%C3%9Fe\+33%2C\+9523\+Villach/);
+  assert.doesNotMatch(html, /Größe folgt|Datum folgt|Wird veröffentlicht/);
+});
+
+test("explains Austrian qualification and international eligibility on one dedicated page", async () => {
+  const response = await request("/qualifikation");
+  assert.equal(response.status, 200);
+  const html = await response.text();
+  assert.match(html, /Der österreichische Qualifikationsweg/);
+  assert.match(html, /mindestens drei positive Ergebnisse/);
+  assert.match(html, /FCI-StöPr 1 und FCI-StöPr 2/);
+  assert.match(html, /3 · 3 · 5/);
+  assert.match(html, /Internationale Teilnahme/);
+  assert.match(html, /nationalen Verband/);
+  assert.match(html, /zwei Reserveteilnehmende/);
+  assert.match(html, /documents\/teilnahmebestimmungen-2027-de\.pdf/);
+  assert.match(html, /documents\/competition-regulations-2027-en\.pdf/);
+  assert.match(html, /documents\/fci-pruefungsordnung-2025-de\.pdf/);
+  assert.match(html, /documents\/fci-trial-regulations-2025-en\.pdf/);
+});
+
+test("uses qualification as a main navigation item and keeps secondary pages in the footer", async () => {
+  const response = await request("/app.js", "text/javascript");
+  assert.equal(response.status, 200);
+  const source = await response.text();
+  assert.match(source, /\["qualifikation\.html", "qualification", "Qualifikation", "Qualification"\]/);
+  assert.doesNotMatch(source, /\["faq\.html", "faq"/);
+  assert.doesNotMatch(source, /\["sponsoren\.html", "sponsors"/);
+  assert.match(source, /href="faq\.html"/);
+  assert.match(source, /href="sponsoren\.html"/);
+});
+
 test("returns the custom 404 page for missing HTML routes", async () => {
   const response = await request("/nicht-vorhanden");
   assert.equal(response.status, 404);
@@ -185,6 +227,9 @@ test("uses dark text for notices on light paper sections", async () => {
   const source = await response.text();
   assert.match(source, /\.section--paper \.notice \{[\s\S]*?color: var\(--green-900\);/);
   assert.match(source, /\.section--paper \.notice strong \{[\s\S]*?color: var\(--green-950\);/);
+  assert.match(source, /\.section--paper \.section-heading p:last-child \{[\s\S]*?color: #435047;/);
+  assert.match(source, /url\("assets\/hero-dog-clean-720\.jpg"\)/);
+  assert.doesNotMatch(source, /url\("assets\/hero-dog-720\.jpg"\)/);
 });
 
 test("publishes the confirmed club, privacy and venue details without internal placeholders", async () => {
