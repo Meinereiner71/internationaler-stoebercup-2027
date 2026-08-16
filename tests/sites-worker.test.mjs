@@ -162,7 +162,10 @@ test("explains Austrian qualification and international eligibility on one dedic
   assert.match(html, /qualifiziert sich jeweils die Hälfte/);
   assert.match(html, /Qualifizierte müssen sich gesondert anmelden/);
   assert.match(html, /StöPr 3 an zwei Tagen bei zwei Leistungsrichtern/);
-  assert.match(html, /ÖKV-Auswahl folgt/);
+  assert.match(html, /Erst- bis Drittplatzierten der FCI-StöPr 1 und FCI-StöPr 2/);
+  assert.match(html, /Erst- bis Fünftplatzierten der FCI-StöPr 3/);
+  assert.match(html, /Zwei Reserveplätze/);
+  assert.doesNotMatch(html, /ÖKV-Auswahl folgt/);
   assert.match(html, /3 · 3 · 5/);
   assert.match(html, /Laufender Zwischenstand/);
   assert.match(html, /Region Süd ausgewählt/);

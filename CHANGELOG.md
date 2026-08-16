@@ -1,5 +1,11 @@
 # Änderungsprotokoll
 
+## 2026-08-16 – Internationale Qualifikation aus dem Österreich-Finale bestätigt
+
+- Plätze 1 bis 3 in FCI-StöPr 1 und 2 als internationale Qualifikationsplätze ausgewiesen
+- Plätze 1 bis 5 in FCI-StöPr 3 als internationale Qualifikationsplätze ausgewiesen
+- bisherigen offenen Auswahlhinweis entfernt und Reservevergabe weiterhin getrennt gekennzeichnet
+
 ## 2026-08-16 – Laufenden Regionalcup-Stand verlinkt
 
 - aktuelle Google-Tabelle der ÖKV-Regionalturniere auf der Qualifikationsseite verlinkt
