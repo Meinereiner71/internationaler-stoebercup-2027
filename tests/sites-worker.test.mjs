@@ -106,12 +106,10 @@ test("uses the published dog image on the event page and in its gallery", async 
   assert.doesNotMatch(html, /assets\/hero-dog-(?:720|1376)\.jpg/);
 });
 
-test("serves the sitemap, robots file and FCI source documents", async () => {
+test("serves the sitemap, robots file and published FCI documents", async () => {
   for (const [route, contentType] of [
     ["/sitemap.xml", /^application\/xml/],
     ["/robots.txt", /^text\/plain/],
-    ["/documents/fci-stoepr-pflichtenheft-de.pdf", /^application\/pdf/],
-    ["/documents/fci-article-search-specifications-en.pdf", /^application\/pdf/],
     ["/documents/fci-pruefungsordnung-2025-de.pdf", /^application\/pdf/],
     ["/documents/fci-trial-regulations-2025-en.pdf", /^application\/pdf/],
     ["/documents/teilnahmebestimmungen-2027-de.pdf", /^application\/pdf/],
@@ -120,6 +118,23 @@ test("serves the sitemap, robots file and FCI source documents", async () => {
     const response = await request(route, "*/*");
     assert.equal(response.status, 200, route);
     assert.match(response.headers.get("content-type") ?? "", contentType, route);
+  }
+});
+
+test("does not publish the withdrawn specification downloads", async () => {
+  const downloads = await request("/downloads");
+  const html = await downloads.text();
+
+  assert.equal(downloads.status, 200);
+  assert.doesNotMatch(html, /Pflichtenheft · Deutsch/);
+  assert.doesNotMatch(html, /Spezifikation · Englisch/);
+
+  for (const route of [
+    "/documents/fci-stoepr-pflichtenheft-de.pdf",
+    "/documents/fci-article-search-specifications-en.pdf",
+  ]) {
+    const response = await request(route, "*/*");
+    assert.equal(response.status, 404, route);
   }
 });
 

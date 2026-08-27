@@ -50,7 +50,7 @@ Danach `http://127.0.0.1:4173/` öffnen.
 
 ## Inhaltsstatus
 
-Datum, Austragungsort, Zwei-Tage-Format, FCI-StöPr 1–3, Länderquoten, österreichischer Qualifikationsweg und Unterkunftsauswahl wurden aus der bisherigen Canva-Seite und den lokalen FCI-Pflichtenheften übernommen. Die beiden FCI-Grundlagendokumente stehen im Downloadcenter bereit.
+Datum, Austragungsort, Zwei-Tage-Format, FCI-StöPr 1–3, Länderquoten, österreichischer Qualifikationsweg und Unterkunftsauswahl wurden aus der bisherigen Canva-Seite und den lokalen FCI-Pflichtenheften übernommen. Die FCI-Prüfungsordnung 2025 und die Teilnahmebestimmungen 2027 stehen jeweils auf Deutsch und Englisch im Downloadcenter bereit. Das deutsche Pflichtenheft und die englische Spezifikation bleiben als interne Quellen im Projekt, werden aber nicht mehr veröffentlicht.
 
 Die Anmeldung ist noch nicht geöffnet. Namentliche Meldungen erfolgen laut FCI-Pflichtenheft gesammelt über die nationalen Verbände. Bis ein datenschutzkonformer Formulardienst freigegeben ist, verwendet die Seite einen direkten E-Mail-Kontakt und zeigt keine nicht sendenden Formularvorschauen.
 

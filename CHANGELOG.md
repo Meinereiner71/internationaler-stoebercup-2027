@@ -1,5 +1,11 @@
 # Änderungsprotokoll
 
+## 2026-08-27 – Zwei Spezifikations-Downloads entfernt
+
+- deutsches FCI-Pflichtenheft und englische Spezifikation aus dem Downloadcenter entfernt
+- beide PDF-Dateien aus dem veröffentlichten Sites-Paket ausgeschlossen; lokale Quellen im Projekt beibehalten
+- Verweis auf das Pflichtenheft auf der Eventseite bereinigt und Nichtveröffentlichung automatisiert abgesichert
+
 ## 2026-08-16 – Qualifikationslink besser lesbar
 
 - Link „Zur Qualifikation“ auf der hellen Hinweisfläche in dunkles Grün geändert

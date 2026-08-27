@@ -19,6 +19,12 @@ const staticAssetFiles = [
   "stadion-detail.jpg",
   "stadion.jpg",
 ];
+const publishedDocumentFiles = [
+  "competition-regulations-2027-en.pdf",
+  "fci-pruefungsordnung-2025-de.pdf",
+  "fci-trial-regulations-2025-en.pdf",
+  "teilnahmebestimmungen-2027-de.pdf",
+];
 const requiredFiles = [
   "index.html",
   "event.html",
@@ -60,7 +66,12 @@ await mkdir(join(client, "assets"), { recursive: true });
 await Promise.all(
   staticAssetFiles.map((file) => cp(join(root, "assets", file), join(client, "assets", file))),
 );
-await cp(join(root, "documents"), join(client, "documents"), { recursive: true });
+await mkdir(join(client, "documents"), { recursive: true });
+await Promise.all(
+  publishedDocumentFiles.map((file) =>
+    cp(join(root, "documents", file), join(client, "documents", file)),
+  ),
+);
 await cp(join(root, "sites", "worker.js"), join(server, "index.js"));
 
 for (const file of requiredFiles) {

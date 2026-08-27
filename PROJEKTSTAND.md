@@ -1,6 +1,6 @@
 # Projektstand – Internationaler FCI-Stöbercup 2027
 
-Stand: 16. August 2026
+Stand: 27. August 2026
 Arbeitsbranch: `feature/premium-event-redesign`  
 Zielbranch des Pull Requests: `main`
 
@@ -29,7 +29,8 @@ Zielbranch des Pull Requests: `main`
 - Bewerbsgrundlagen FCI-StöPr 1–3, zwei Starts, Einzel-/Mannschaftswertung und Länderquoten
 - österreichischer Qualifikationsweg aus der bisherigen Canva-Veranstaltungsseite
 - konkrete Beschreibungen und Direktlinks für fünf Unterkunftsempfehlungen
-- deutsches FCI-Pflichtenheft und englische Spezifikation als lokale Downloads
+- FCI-Prüfungsordnung 2025 und Teilnahmebestimmungen 2027 jeweils als deutsche und englische Downloads
+- deutsches Pflichtenheft und englische Spezifikation auf Benutzerwunsch aus dem öffentlichen Downloadcenter und dem veröffentlichten Paket entfernt; lokale Quellen bleiben erhalten
 - klarer Anmeldeweg über die nationalen Verbände und funktionierender E-Mail-Kontakt statt nicht sendender Scheinformulare
 - erweiterte Routentests für Rechtstexte, Sitemap, Robots-Datei und PDF-Dokumente
 
@@ -72,7 +73,7 @@ Die nicht sendenden Formularvorschauen wurden entfernt, damit keine Anfrage oder
 - Browserkonsole: keine Fehler oder Warnungen
 - Lighthouse Mobile: Performance 91, Barrierefreiheit 100, Best Practices 100, SEO 100
 - `npm test`: Sites-Build sowie Worker-Routen, 404 und Asset-Auslieferung
-- `npm test` am 16. August 2026: 15 Tests bestanden, einschließlich Rechtstexten, Sitemap, Robots-Datei, Qualifikationsweg und FCI-PDFs
+- `npm test` am 27. August 2026: Sites-Build und 16 Tests bestanden, einschließlich der Nichtveröffentlichung der beiden entfernten PDFs
 - öffentliche Start- und Datenschutzseite ohne Anmeldung mit HTTP-Status 200 geprüft
 - Link „Zur Qualifikation“ auf der hellen Hinweisfläche mit dunkelgrünem Hochkontrast-Stil abgesichert
 

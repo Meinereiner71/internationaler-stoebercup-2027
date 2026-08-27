@@ -1,6 +1,6 @@
 # Release-Checkliste – Internationaler FCI-StöPr Wettbewerb 2027
 
-Stand: 16. August 2026
+Stand: 27. August 2026
 
 ## Erledigt
 
@@ -9,7 +9,8 @@ Stand: 16. August 2026
 - [x] Zwei-Tage-Programm für 22. und 23. Mai 2027
 - [x] FCI-StöPr 1–3, Länderquoten und österreichischer Qualifikationsweg
 - [x] fünf Unterkunftsempfehlungen mit Direktlinks
-- [x] deutsches und englisches FCI-Pflichtenheft als lokale Downloads
+- [x] FCI-Prüfungsordnung 2025 und Teilnahmebestimmungen 2027 jeweils auf Deutsch und Englisch als lokale Downloads
+- [x] deutsches Pflichtenheft und englische Spezifikation auf Benutzerwunsch aus dem öffentlichen Downloadcenter entfernt
 - [x] keine irreführenden, nicht sendenden Formulare
 - [x] Mobile-/Desktop-Grundprüfung und automatisierte Build-/Routentests
 - [x] bestätigte Betreiber-, Vereins- und Veranstaltungsdaten eingetragen
