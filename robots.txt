@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://internationaler-stoebercup-2027.meinereiner71.chatgpt.site/sitemap.xml
